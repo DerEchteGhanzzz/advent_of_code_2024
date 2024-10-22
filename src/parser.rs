@@ -15,5 +15,5 @@ fn lines_from_file(filename: impl AsRef<Path>) -> Vec<String> {
 }
 
 pub fn get_input(day: &str) -> Vec<String> {
-    return lines_from_file(format!("input_files/day{day}.txt"));
+    return lines_from_file(format!("input_files/day_{day}.txt"));
 }

@@ -6,7 +6,7 @@ pub fn solve_a(input: Vec<String>) -> i32 {
 
 pub fn solve_b(input: Vec<String>) -> i32 {
     let depths = to_int_vec(&input);
-	depths.windows(3).fold(0, |acc, pair| if (pair[1] + pair[2]) > (pair[0] + pair[1]) { acc + 1 } else { acc })
+	depths.windows(4).fold(0, |acc, pair| if pair[1] + pair[2] + pair[3] > pair[0] + pair[1] + pair[2] { acc + 1 } else { acc })
 }
 
 pub fn to_int_vec(input: &Vec<String>) -> Vec<i32> {

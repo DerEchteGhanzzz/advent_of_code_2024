@@ -1,12 +1,12 @@
 // last year's day1 for exercise
-pub fn solve_a(input: Vec<String>) -> String {
+pub fn solve_a(input: Vec<String>) -> u64 {
 	let values = input.iter().map(|l| int_to_calibration_value(l)).collect::<Vec<u64>>();
-	return format!("{}", values.iter().sum::<u64>());
+	values.iter().sum::<u64>()
 }
 
-pub fn solve_b(input: Vec<String>) -> String {
+pub fn solve_b(input: Vec<String>) -> u64 {
 	let values = input.iter().map(|l| calibration_value(l)).collect::<Vec<u64>>();
-	return format!("{}", values.iter().sum::<u64>());
+	values.iter().sum::<u64>()
 }
 
 fn int_to_calibration_value(line: &str) -> u64 {
