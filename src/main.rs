@@ -13,5 +13,8 @@ fn main() {
     println!("Solution A:\n{}", days::day_x2::solve_a(get_input("x2")));
     println!("Solution B:\n{}", days::day_x2::solve_b(get_input("x2")));
     
+    println!("Solution A:\n{:?}", days::day_x3::solve_a(get_input("x3")));
+    println!("Solution B:\n{:?}", days::day_x3::solve_b(get_input("x3")));
+
     println!("Time elapsed: {:?}", start.elapsed());
 }
